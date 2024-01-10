@@ -1,0 +1,56 @@
+/* dashboard.css */
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Create a grid layout for the dashboard */
+  .dashboard {
+    display: grid;
+    grid-template-areas:
+      'sidebar navbar'
+      'sidebar payout-page';
+    
+   
+    grid-template-columns: 200px 1fr; /* Sidebar and Main Content Box */
+    grid-template-rows: 60px 1fr; /* Height for Navbar and Main Content Box */
+    height: 100vh; /* 100% height for the whole viewport */
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    grid-area: sidebar; /* Assign to the 'sidebar' grid area */
+  
+    width:200px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh; /* 100% height from top to bottom */
+
+    position:fixed;
+  }
+  
+  /* Style the navbar */
+  .navbar {
+    grid-area: navbar; /* Assign to the 'navbar' grid area */
+
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* 100% width */
+  }
+  
+  /* Style the main content (payout page) */
+  .payout-page {
+    grid-area: payout-page; /* Assign to the 'payout-page' grid area */
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-color: #e02121; */
+     height: auto;
+     width:100%;
+  }
+  
+
+  
